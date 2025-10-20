@@ -1,21 +1,21 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import heroImg from "../assets/hero.png";
-import product1 from "../assets/product1.jpeg";
-import product2 from "../assets/product2.jpg";
-import product3 from "../assets/product3.jpg";
-import product4 from "../assets/product4.jpeg";
-import product5 from "../assets/product5.jpeg";
-import product6 from "../assets/product6.jpeg";
+import heroImg from "../assets/landing/hero.png";
+import product1 from "../assets/landing/product1.jpeg";
+import product2 from "../assets/landing/product2.jpg";
+import product3 from "../assets/landing/product3.jpg";
+import product4 from "../assets/landing/product4.jpeg";
+import product5 from "../assets/landing/product5.jpeg";
+import product6 from "../assets/landing/product6.jpeg";
 
-import skincare1 from "../assets/skincare1.jpg";
-import skincare2 from "../assets/skincare2.jpg";
-import skincare3 from "../assets/skincare3.jpg";
-import skincare4 from "../assets/skincare4.jpeg";
+import skincare1 from "../assets/landing/skincare1.jpg";
+import skincare2 from "../assets/landing/skincare2.jpg";
+import skincare3 from "../assets/landing/skincare3.jpg";
+import skincare4 from "../assets/landing/skincare4.jpeg";
 
-import brand1 from "../assets/brand1.jpg";
-import brand2 from "../assets/brand2.webp";
-import brand3 from "../assets/brand3.avif";
+import brand1 from "../assets/landing/brand1.jpg";
+import brand2 from "../assets/landing/brand2.webp";
+import brand3 from "../assets/landing/brand3.avif";
 
 const Hero = () => {
   const skincareProducts = [

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Categories from "./Categories.jsx";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -22,9 +21,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="#brand" className="hover:text-yellow-600 transition">
+            <Link to='/Brands' className="hover:text-yellow-600 transition">
               Brand
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#luxe" className="hover:text-yellow-600 transition">
