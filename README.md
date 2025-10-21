@@ -6,7 +6,7 @@ A responsive React-based beauty products website showcasing categories, new laun
 React.js • Tailwind CSS • React Router DOM
 
 ## Screenshot
-![Webpage Screenshots]()
+![Webpage Screenshots]("Homepage.png)
 
 ##  Setup
 ```bash
