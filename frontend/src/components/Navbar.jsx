@@ -63,18 +63,15 @@ const Navbar = () => {
 
         {isOpen && (
           <div className="absolute top-16 right-6 bg-white/90 backdrop-blur-md shadow-lg rounded-lg flex flex-col items-center space-y-4 py-4 px-8 text-black text-base font-medium transition-all duration-300 z-50">
-            <a href="#categories" className="hover:text-yellow-600 transition block w-full text-center">
+            <Link to="/Categories" className="hover:text-yellow-600 transition block w-full text-center">
               Categories
-            </a>
-            <a href="#brand" className="hover:text-yellow-600 transition block w-full text-center">
+            </Link>
+            <Link to="/Brands" className="hover:text-yellow-600 transition block w-full text-center">
               Brand
-            </a>
-            <a href="#luxe" className="hover:text-yellow-600 transition block w-full text-center">
-              Luxe
-            </a>
-            <a href="#fashion" className="hover:text-yellow-600 transition block w-full text-center">
-              Fashion
-            </a>
+            </Link >
+            <Link to="/Products" className="hover:text-yellow-600 transition block w-full text-center">
+              Products
+            </Link>
           </div>
         )}
       </div>
