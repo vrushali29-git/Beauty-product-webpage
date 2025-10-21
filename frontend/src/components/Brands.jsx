@@ -23,12 +23,9 @@ const Brands = () => {
 
   return (
     <section className="py-20 bg-pink-50 font-sans w-full">
-      {/* Heading */}
       <h2 className="text-3xl font-bold text-center mb-5 mt-5 text-yellow-700">
         Brands Featured by Us
       </h2>
-
-      {/* Featured Images */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 px-4 sm:px-10">
         {featured.map((img, index) => (
           <div
@@ -43,8 +40,7 @@ const Brands = () => {
           </div>
         ))}
       </div>
-
-      {/* Brand Logos */}
+      
       <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-12 sm:px-10">
         {brandImages.map((img, index) => (
           <div

@@ -49,7 +49,6 @@ const products = [
 const Products = () => {
   return (
     <section className="bg-pink-50 font-sans py-10 px-4 sm:px-10 mt-15">
-      {/* Filter Section */}
       <div className="grid grid-cols-2 sm:grid-cols-7 gap-2 mb-8 text-sm font-medium text-gray-700">
         <div className="flex items-center justify-between border-b border-gray-300 pb-2 cursor-pointer">
           Categories <span>▼</span>
@@ -74,7 +73,6 @@ const Products = () => {
         </div>
       </div>
 
-      {/* Product Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
         {products.map((product) => (
           <div
