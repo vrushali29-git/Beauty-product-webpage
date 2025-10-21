@@ -1,15 +1,18 @@
-// src/components/Layout.jsx
 import React from "react";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
+  const location = useLocation();
+  const hideFooterPaths = ["/ShoppingBag"]; // Add any paths where footer shouldn't show
+
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
       <Navbar />
-      <main className="flex-grow">{children}</main>
-      <Footer />
-    </div>
+      <main>{children}</main>
+      {!hideFooterPaths.includes(location.pathname) && <Footer />}
+    </>
   );
 };
 

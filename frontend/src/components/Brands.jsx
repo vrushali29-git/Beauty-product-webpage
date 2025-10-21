@@ -28,7 +28,7 @@ const Brands = () => {
         Brands Featured by Us
       </h2>
 
-      {/* 3 Square Featured Images */}
+      {/* Featured Images */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 px-4 sm:px-10">
         {featured.map((img, index) => (
           <div
@@ -60,7 +60,6 @@ const Brands = () => {
         ))}
       </div>
 
-      {/* Exclusive Launch Alert */}
       <div className="mb-12 h-30 flex justify-center px-4 sm:px-10">
         <div
           className="w-full  aspect-video rounded-lg shadow-md overflow-hidden flex items-center justify-center relative hover:scale-105 transition-transform duration-300"
@@ -70,9 +69,8 @@ const Brands = () => {
             backgroundPosition: "center",
           }}
         >
-          {/* Overlay */}
+        
           <div className="absolute inset-0 rounded-lg"></div>
-          {/* Text */}
           <div className="relative text-center text-black px-4">
             <h3 className="text-xl sm:text-2xl font-bold mb-2">
               Exclusive Launch Alert!
@@ -85,7 +83,6 @@ const Brands = () => {
         </div>
       </div>
 
-      {/* 4 Product Squares */}
       <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 px-4 sm:px-10">
         {products.map((img, index) => (
           <div

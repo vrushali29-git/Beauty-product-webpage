@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="w-full z-50 px-6 md:px-20 py-4 flex items-center justify-between font-sans bg-white/80 backdrop-blur-md shadow-sm fixed top-0">
       {/* Logo */}
       <h1 className="text-3xl font-semibold text-black tracking-wide cursor-pointer">
-        BEAUTY
+        <Link to="/">BEAUTY</Link>
       </h1>
 
       {/* Desktop Menu */}
@@ -26,15 +26,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="#luxe" className="hover:text-yellow-600 transition">
-              Luxe
-            </a>
+            <Link to="/Products" className="hover:text-yellow-600 transition">
+              Products
+            </Link>
           </li>
-          <li>
-            <a href="#fashion" className="hover:text-yellow-600 transition">
-              Fashion
-            </a>
-          </li>
+          
         </ul>
 
         {/* Search Bar */}
@@ -49,13 +45,13 @@ const Navbar = () => {
         {/* Icons + Login */}
         <div className="flex items-center space-x-4 ml-6 text-black">
           {/* Shopping Bag */}
-          <span className="material-symbols-outlined cursor-pointer text-2xl hover:text-yellow-600 transition">
+          <Link to="/ShoppingBag" className="material-symbols-outlined cursor-pointer text-2xl hover:text-yellow-600 transition">
             shopping_bag
-          </span>
+          </Link>
           {/* Wishlist Heart */}
-          <span className="material-symbols-outlined cursor-pointer text-2xl hover:text-yellow-600 transition">
+          <Link to="/Wishlist" className="material-symbols-outlined cursor-pointer text-2xl hover:text-yellow-600 transition">
             favorite
-          </span>
+          </Link>
           {/* Login */}
           <button className="px-4 py-2 border border-yellow-600 text-yellow-600 rounded-full hover:bg-yellow-600 hover:text-white transition">
             Login

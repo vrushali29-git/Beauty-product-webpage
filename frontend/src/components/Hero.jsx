@@ -42,15 +42,13 @@ const Hero = () => {
         className="flex items-center justify-start px-8 md:px-20 transition-all duration-500 min-h-[60vh] md:min-h-[80vh] relative overflow-hidden"
         style={{
           backgroundImage: `url(${heroImg})`,
-          backgroundSize: "cover", // Make sure image covers the section
-          backgroundRepeat: "no-repeat", // Avoid repeated patterns
-          backgroundPosition: "right center", // Crop from the left as screen shrinks
+          backgroundSize: "cover", 
+          backgroundRepeat: "no-repeat", 
+          backgroundPosition: "right center", 
         }}
       >
-        {/* Overlay */}
         <div className="absolute inset-0 bg-pink-60/70 md:bg-transparent"></div>
 
-        {/* Text Content */}
         <div className="relative z-10 text-left max-w-lg md:max-w-xl">
           <h1 className="text-4xl md:text-6xl font-extrabold text-black mb-3 drop-shadow-md font-sans">
             Cosmetics that
@@ -70,9 +68,7 @@ const Hero = () => {
           Our Products
         </h2>
 
-        {/* Products Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 justify-items-center">
-          {/* Product 1 */}
           <div className="flex flex-col items-center">
             <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full overflow-hidden shadow-lg">
               <img
@@ -84,7 +80,6 @@ const Hero = () => {
             <p className="mt-4 text-center text-black font-medium">Lipstick</p>
           </div>
 
-          {/* Product 2 */}
           <div className="flex flex-col items-center">
             <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full overflow-hidden shadow-lg">
               <img
@@ -98,7 +93,6 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Product 3 */}
           <div className="flex flex-col items-center">
             <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full overflow-hidden shadow-lg">
               <img
@@ -110,7 +104,6 @@ const Hero = () => {
             <p className="mt-4 text-center text-black font-medium">Blush</p>
           </div>
 
-          {/* Product 4 */}
           <div className="flex flex-col items-center">
             <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full overflow-hidden shadow-lg">
               <img
@@ -122,7 +115,6 @@ const Hero = () => {
             <p className="mt-4 text-center text-black font-medium">Mascara</p>
           </div>
 
-          {/* Product 5 */}
           <div className="flex flex-col items-center">
             <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full overflow-hidden shadow-lg">
               <img
@@ -134,7 +126,6 @@ const Hero = () => {
             <p className="mt-4 text-center text-black font-medium">Eyeshadow</p>
           </div>
 
-          {/* Product 6 */}
           <div className="flex flex-col items-center">
             <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full overflow-hidden shadow-lg">
               <img
@@ -152,21 +143,20 @@ const Hero = () => {
           Skincare Essentials
         </h2>
 
-        {/* Grid: 2 columns on desktop, 1 column on mobile */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
           {skincareProducts.map((product) => (
             <div
               key={product.id}
               className="flex flex-col items-center group transition-transform duration-300 hover:scale-105 w-full max-w-md"
             >
-              {/* Rectangular Image */}
+
               <div className="w-full h-60 rounded-lg overflow-hidden shadow-lg relative">
                 <img
                   src={product.img}
                   alt={product.name}
                   className="w-full h-full object-cover"
                 />
-                {/* Shop Now button on hover */}
+                
                 <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-yellow-500 text-white text-sm px-4 py-2 rounded-full transition">
                   Shop Now
                 </button>
@@ -178,7 +168,6 @@ const Hero = () => {
           ))}
         </div>
 
-        {/* Explore More Button */}
         <div className="mt-12 text-center">
           <button className="px-8 py-3 bg-yellow-500 text-white font-medium rounded-full hover:bg-yellow-600 transition">
             Explore More

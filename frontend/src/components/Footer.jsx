@@ -5,7 +5,6 @@ const Footer = () => {
   return (
     <footer className="bg-blue-950 text-white px-8 md:px-20 py-12">
       <div className="flex flex-col md:flex-row justify-between gap-12">
-        {/* Logo / Brand */}
         <div className="flex flex-col items-start">
           <h1 className="text-3xl font-bold mb-4">BEAUTY</h1>
           <p className="text-sm md:text-base text-gray-300">
@@ -13,7 +12,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links */}
         <div className="flex flex-col">
           <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
           <ul className="space-y-2">
@@ -40,7 +38,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Newsletter */}
         <div className="flex flex-col">
           <h2 className="text-xl font-semibold mb-4">Newsletter</h2>
           <p className="text-sm md:text-base text-gray-300 mb-4">
@@ -59,10 +56,8 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Divider */}
       <div className="border-t border-gray-700 my-8"></div>
 
-      {/* Social Media & Copyright */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-gray-400 text-sm">
           &copy; {new Date().getFullYear()} BEAUTY. All rights reserved.

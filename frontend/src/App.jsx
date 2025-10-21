@@ -4,18 +4,23 @@ import Layout from "./components/Layout";
 import Categories from "./components/Categories";
 import Brands from "./components/Brands";
 import Hero from "./components/Hero";
+import Products from "./components/Products";
+import ShoppingBag from "./components/ShoppingBag.jsx";
+import Wishlist from "./components/Wishlist";
 
 function App() {
   return (
     <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/Categories" element={<Categories />} />
-          <Route path="/Brands" element={<Brands />} />
-        </Routes>
-      </Layout>
-    </Router>
+  <Routes>
+    <Route path="/" element={<Layout><Hero /></Layout>} />
+    <Route path="/Categories" element={<Layout><Categories /></Layout>} />
+    <Route path="/Brands" element={<Layout><Brands /></Layout>} />
+    <Route path="/Products" element={<Layout><Products /></Layout>} />
+    <Route path="/ShoppingBag" element={<ShoppingBag />} /> 
+    <Route path="/Wishlist" element={<Wishlist />} />
+  </Routes>
+</Router>
+
   );
 }
 
