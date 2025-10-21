@@ -13,7 +13,7 @@ React.js • Tailwind CSS • React Router DOM
 
 ##  Setup
 ```bash
-git clone https://github.com/vrushali29-git/beauty_product_webpage.git
+git clone https://github.com/vrushali29-git/Beauty-product-webpage.git
 cd frontend
 npm install
 npm run dev
